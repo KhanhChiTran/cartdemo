@@ -2,8 +2,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 body {
   background: #2b6bac;
@@ -25,7 +25,7 @@ h1 {
   margin-bottom: 30px;
 }
 .product-image-wrap {
-  background-image: url(/image/blue.jpg);
+  background-image: url(./image/blue.jpg);
   height: 350px;
   width: 80%;
   background-size: cover;
@@ -63,14 +63,15 @@ h1 {
   background: #f6e7aa;
 }
 .color-select .active::before {
-  content: '';
+  content: "";
   width: 26px;
   height: 26px;
   border: 1.5px solid #999;
   position: absolute;
   border-radius: 50%;
-  left: -4px;
-  top: -4px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .product-details {
   width: 80%;
@@ -79,6 +80,9 @@ h1 {
   font-weight: 500;
   margin: auto;
 }
+.product-details p {
+  line-height: 45px;
+}
 .add-cart-btn {
   background: coral;
   margin-left: auto;
@@ -86,8 +90,9 @@ h1 {
   font-weight: 500;
   border: 1px solid coral;
   border-radius: 4px;
-  padding: 0 20px;
+  padding: 10px 20px;
   cursor: pointer;
+  outline: none;
   font-size: 1.2rem;
 }
 .add-cart-btn:hover {
